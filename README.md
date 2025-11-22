@@ -1,4 +1,4 @@
-# Spring Boot 4 HTTP Interfaces Demo
+# Http service client spring boot 4
 
 A demonstration project showcasing the new HTTP Service Client features in Spring Framework 7 and Spring Boot 4. 
 This project uses declarative HTTP interfaces to consume the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/).
@@ -88,7 +88,7 @@ This structure follows a conventional Maven + Spring Boot layout so it's easy to
 
 ```bash
 git clone <repository-url>
-cd sb4-http-interfaces
+cd http-service-client-spring
 ```
 
 ### 2. Build the Project
