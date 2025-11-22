@@ -13,7 +13,9 @@ public class HttpConfig {
     @Bean
     RestClientHttpServiceGroupConfigurer groupConfigurer() {
         return groups -> {
-            groups.forEachClient((group, builder) ->
+            groups
+                    .filterByName("jsonplaceholder")
+                    .forEachClient((group, builder) ->
                     builder.baseUrl("https://jsonplaceholder.typicode.com")
                             .defaultHeader("Accept", "application/json")
                             .build()
